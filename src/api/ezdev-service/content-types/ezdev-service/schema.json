@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ezdev_services",
+  "info": {
+    "singularName": "ezdev-service",
+    "pluralName": "ezdev-services",
+    "displayName": "EZdev Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

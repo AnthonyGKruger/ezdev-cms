@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dpts_services",
+  "info": {
+    "singularName": "dpts-service",
+    "pluralName": "dpts-services",
+    "displayName": "DPTS Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "long_description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "price": {
+      "type": "integer"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  }
+}

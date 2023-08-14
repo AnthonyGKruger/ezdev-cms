@@ -35,6 +35,12 @@
     },
     "image_url": {
       "type": "string"
+    },
+    "dpts_orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dpts-order.dpts-order",
+      "mappedBy": "dpts_service"
     }
   }
 }

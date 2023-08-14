@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dpts_users",
+  "info": {
+    "singularName": "dpts-user",
+    "pluralName": "dpts-users",
+    "displayName": "DPTS user"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "busines_name": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "dpts_orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dpts-order.dpts-order",
+      "mappedBy": "dpts_user"
+    }
+  }
+}

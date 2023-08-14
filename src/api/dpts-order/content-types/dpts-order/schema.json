@@ -17,18 +17,18 @@
       "target": "api::dpts-service.dpts-service",
       "inversedBy": "dpts_orders"
     },
-    "dpts_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::dpts-user.dpts-user",
-      "inversedBy": "dpts_orders"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
         "fulfilled",
         "pending"
       ]
+    },
+    "dpts_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::dpts-user.dpts-user",
+      "inversedBy": "dpts_orders"
     }
   }
 }

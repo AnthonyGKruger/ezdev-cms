@@ -4,7 +4,8 @@
   "info": {
     "singularName": "dpts-user",
     "pluralName": "dpts-users",
-    "displayName": "DPTS user"
+    "displayName": "DPTS user",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -29,9 +30,22 @@
     },
     "dpts_orders": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::dpts-order.dpts-order",
-      "mappedBy": "dpts_user"
+      "mappedBy": "dpts_users"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "avatar_url": {
+      "type": "string"
     }
   }
 }

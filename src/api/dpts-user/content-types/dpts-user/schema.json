@@ -35,17 +35,21 @@
       "mappedBy": "dpts_users"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "avatar_url": {
       "type": "string"
+    },
+    "password": {
+      "type": "text"
     }
   }
 }

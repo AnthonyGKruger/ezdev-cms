@@ -21,33 +21,6 @@
     "email": {
       "type": "email"
     },
-    "busines_name": {
-      "type": "string"
-    },
-    "user_id": {
-      "type": "uid",
-      "targetField": "name"
-    },
-    "dpts_orders": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::dpts-order.dpts-order",
-      "mappedBy": "dpts_users"
-    },
-    "avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "avatar_url": {
-      "type": "string"
-    },
     "password": {
       "type": "text"
     }

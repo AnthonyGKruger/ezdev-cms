@@ -23,12 +23,6 @@
         "fulfilled",
         "pending"
       ]
-    },
-    "dpts_users": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::dpts-user.dpts-user",
-      "inversedBy": "dpts_orders"
     }
   }
 }

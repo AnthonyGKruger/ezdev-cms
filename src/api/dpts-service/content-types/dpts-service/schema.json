@@ -4,7 +4,8 @@
   "info": {
     "singularName": "dpts-service",
     "pluralName": "dpts-services",
-    "displayName": "DPTS Service"
+    "displayName": "DPTS Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,16 +20,6 @@
     },
     "long_description": {
       "type": "text"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
     },
     "price": {
       "type": "integer"

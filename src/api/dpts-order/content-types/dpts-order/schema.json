@@ -4,25 +4,29 @@
   "info": {
     "singularName": "dpts-order",
     "pluralName": "dpts-orders",
-    "displayName": "DPTS orders"
+    "displayName": "DPTS orders",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "dpts_service": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::dpts-service.dpts-service",
-      "inversedBy": "dpts_orders"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
         "fulfilled",
         "pending"
       ]
+    },
+    "cart": {
+      "type": "json"
+    },
+    "dpts_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dpts-user.dpts-user",
+      "inversedBy": "dpts_orders"
     }
   }
 }

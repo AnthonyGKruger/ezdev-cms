@@ -23,6 +23,12 @@
     },
     "password": {
       "type": "text"
+    },
+    "dpts_orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dpts-order.dpts-order",
+      "mappedBy": "dpts_user"
     }
   }
 }

@@ -29,6 +29,12 @@
       "relation": "oneToMany",
       "target": "api::dpts-order.dpts-order",
       "mappedBy": "dpts_user"
+    },
+    "dpts_temp_cart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dpts-temp-cart.dpts-temp-cart",
+      "mappedBy": "dpts_user"
     }
   }
 }
